@@ -19,7 +19,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zr-mh-MuM">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="170" y="35" width="42" height="21"/>
@@ -98,125 +98,143 @@
                         <outlet property="activityIndicator" destination="0rc-BC-boD" id="gcy-dO-ALx"/>
                         <outlet property="emailAddress" destination="Lpc-Oz-ycl" id="wH3-Fg-HX8"/>
                         <outlet property="password" destination="jW7-Zp-Bby" id="dc1-hX-CV3"/>
-                        <segue destination="cKA-dH-rtc" kind="show" identifier="signInToNavigation" id="zMe-9g-qZC"/>
+                        <segue destination="Prw-V0-a53" kind="show" identifier="signInToNavigation" id="vOj-B5-OBa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yGJ-SR-L7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="868.5" y="321"/>
         </scene>
-        <!--Master View Controller-->
-        <scene sceneID="OXW-cL-LNp">
+        <!--Record Activities-->
+        <scene sceneID="dA5-g2-SMm">
             <objects>
-                <viewController id="S4q-5s-RLc" customClass="MasterViewController" customModule="Toddler" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1m5-AD-fpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="dWM-SX-BSA" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FZM-8n-TCq"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ami-bB-bzR"/>
+                        <viewControllerLayoutGuide type="top" id="All-md-IDe"/>
+                        <viewControllerLayoutGuide type="bottom" id="zE1-Ff-7Fm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="l1b-ME-sgN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="Rk3-ay-DJf">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Record Activities" id="M5O-z2-DCw"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2932.5" y="621"/>
+        </scene>
+        <!--Activity Log-->
+        <scene sceneID="Xr8-Mb-VKT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SgJ-Ul-Uvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="cQa-AA-3Qe" customClass="MasterViewController" customModule="Toddler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Wh-j8-3RH"/>
+                        <viewControllerLayoutGuide type="bottom" id="7qD-dU-pnD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wdc-Qw-qzF">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJD-Go-Nsg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YF6-mx-o2C">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Eating">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="79" y="88" width="46" height="30"/>
+                                    <rect key="frame" x="82" y="157" width="46" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aq0-uv-5b3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wps-mx-LLM">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Playing">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="265" y="88" width="46" height="30"/>
+                                    <rect key="frame" x="261" y="157" width="61" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9b-qm-ObL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvY-u1-LvY">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Sleep">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="79" y="183" width="46" height="30"/>
+                                    <rect key="frame" x="82" y="252" width="46" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0B6-91-tyk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-cH-4m4">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Learning">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="265" y="183" width="46" height="30"/>
+                                    <rect key="frame" x="258" y="252" width="67" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rU-GC-r0E">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkJ-g1-4PS">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Emotion">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="79" y="285" width="46" height="30"/>
+                                    <rect key="frame" x="74" y="354" width="63" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3x-bv-ND3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYn-u7-Byg">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Incidence">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="265" y="285" width="46" height="30"/>
+                                    <rect key="frame" x="255" y="354" width="72" height="30"/>
                                 </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="zJD-Go-Nsg"/>
-                                <exclude reference="aq0-uv-5b3"/>
-                                <exclude reference="e9b-qm-ObL"/>
-                                <exclude reference="0B6-91-tyk"/>
-                                <exclude reference="1rU-GC-r0E"/>
-                                <exclude reference="p3x-bv-ND3"/>
+                                <exclude reference="YF6-mx-o2C"/>
+                                <exclude reference="wps-mx-LLM"/>
+                                <exclude reference="TvY-u1-LvY"/>
+                                <exclude reference="OfG-cH-4m4"/>
+                                <exclude reference="tkJ-g1-4PS"/>
+                                <exclude reference="NYn-u7-Byg"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="zJD-Go-Nsg"/>
-                                <include reference="aq0-uv-5b3"/>
-                                <include reference="e9b-qm-ObL"/>
-                                <include reference="0B6-91-tyk"/>
-                                <include reference="1rU-GC-r0E"/>
-                                <include reference="p3x-bv-ND3"/>
+                                <include reference="YF6-mx-o2C"/>
+                                <include reference="wps-mx-LLM"/>
+                                <include reference="TvY-u1-LvY"/>
+                                <include reference="OfG-cH-4m4"/>
+                                <include reference="tkJ-g1-4PS"/>
+                                <include reference="NYn-u7-Byg"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="S1u-jW-fSE"/>
+                    <tabBarItem key="tabBarItem" title="Activity Log" id="GPd-DY-Juk"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rJh-qO-bfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2664" y="321"/>
+            <point key="canvasLocation" x="2932.5" y="-41"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="XGb-S0-cti">
+        <!--Tab Bar Controller-->
+        <scene sceneID="vIk-Rg-YFi">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cKA-dH-rtc" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JEn-Vj-W88">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gD-j5-XDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="Prw-V0-a53" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="qJL-zg-niQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
                     <connections>
-                        <segue destination="S4q-5s-RLc" kind="relationship" relationship="rootViewController" id="igp-4B-2XC"/>
+                        <segue destination="cQa-AA-3Qe" kind="relationship" relationship="viewControllers" id="xSe-ef-JLE"/>
+                        <segue destination="dWM-SX-BSA" kind="relationship" relationship="viewControllers" id="vam-4d-ECg"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fb1-LO-WSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tabBarController>
             </objects>
-            <point key="canvasLocation" x="1746" y="321"/>
+            <point key="canvasLocation" x="1852.5" y="320"/>
         </scene>
     </scenes>
 </document>
