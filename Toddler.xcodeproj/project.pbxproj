@@ -8,11 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		64311E551ADE841600E1CB60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64311E541ADE841600E1CB60 /* AppDelegate.swift */; };
-		64311E571ADE841600E1CB60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64311E561ADE841600E1CB60 /* ViewController.swift */; };
 		64311E5A1ADE841600E1CB60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64311E581ADE841600E1CB60 /* Main.storyboard */; };
 		64311E5C1ADE841600E1CB60 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64311E5B1ADE841600E1CB60 /* Images.xcassets */; };
 		64311E5F1ADE841600E1CB60 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64311E5D1ADE841600E1CB60 /* LaunchScreen.xib */; };
 		64311E6B1ADE841600E1CB60 /* ToddlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64311E6A1ADE841600E1CB60 /* ToddlerTests.swift */; };
+		64311E7A1ADE84DE00E1CB60 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E791ADE84DE00E1CB60 /* AudioToolbox.framework */; };
+		64311E7C1ADE84E700E1CB60 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E7B1ADE84E700E1CB60 /* CFNetwork.framework */; };
+		64311E7E1ADE84EF00E1CB60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E7D1ADE84EF00E1CB60 /* CoreGraphics.framework */; };
+		64311E801ADE84F900E1CB60 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E7F1ADE84F900E1CB60 /* CoreLocation.framework */; };
+		64311E821ADE850100E1CB60 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E811ADE850100E1CB60 /* MobileCoreServices.framework */; };
+		64311E841ADE850B00E1CB60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E831ADE850B00E1CB60 /* QuartzCore.framework */; };
+		64311E861ADE851100E1CB60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E851ADE851100E1CB60 /* Security.framework */; };
+		64311E881ADE851700E1CB60 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E871ADE851700E1CB60 /* StoreKit.framework */; };
+		64311E8A1ADE851F00E1CB60 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E891ADE851F00E1CB60 /* SystemConfiguration.framework */; };
+		64311E8C1ADE852900E1CB60 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E8B1ADE852900E1CB60 /* libz.dylib */; };
+		64311E8E1ADE853500E1CB60 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E8D1ADE853400E1CB60 /* libsqlite3.dylib */; };
+		64311E9F1ADF00B200E1CB60 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311E9E1ADF00B200E1CB60 /* Accounts.framework */; };
+		64311EA11ADF00BC00E1CB60 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64311EA01ADF00BC00E1CB60 /* Social.framework */; };
+		64311EA71ADF0B0F00E1CB60 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64311EA61ADF0B0F00E1CB60 /* MasterViewController.swift */; };
+		64311EA91ADF0D5A00E1CB60 /* SignUpInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64311EA81ADF0D5A00E1CB60 /* SignUpInViewController.swift */; };
+		6DC61F4B1ADF1AAE000075B4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC61F451ADF1AAE000075B4 /* Bolts.framework */; };
+		6DC61F4C1ADF1AAE000075B4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC61F461ADF1AAE000075B4 /* Parse.framework */; };
+		6DC61F4D1ADF1AAE000075B4 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC61F471ADF1AAE000075B4 /* ParseCrashReporting.framework */; };
+		6DC61F4E1ADF1AAE000075B4 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC61F481ADF1AAE000075B4 /* ParseFacebookUtils.framework */; };
+		6DC61F4F1ADF1AAE000075B4 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC61F491ADF1AAE000075B4 /* ParseFacebookUtilsV4.framework */; };
+		6DC61F501ADF1AAE000075B4 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC61F4A1ADF1AAE000075B4 /* ParseUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +49,34 @@
 		64311E4F1ADE841600E1CB60 /* Toddler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toddler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64311E531ADE841600E1CB60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64311E541ADE841600E1CB60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64311E561ADE841600E1CB60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		64311E591ADE841600E1CB60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64311E5B1ADE841600E1CB60 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		64311E5E1ADE841600E1CB60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		64311E641ADE841600E1CB60 /* ToddlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToddlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64311E691ADE841600E1CB60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64311E6A1ADE841600E1CB60 /* ToddlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToddlerTests.swift; sourceTree = "<group>"; };
+		64311E791ADE84DE00E1CB60 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		64311E7B1ADE84E700E1CB60 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		64311E7D1ADE84EF00E1CB60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		64311E7F1ADE84F900E1CB60 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		64311E811ADE850100E1CB60 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		64311E831ADE850B00E1CB60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		64311E851ADE851100E1CB60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		64311E871ADE851700E1CB60 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		64311E891ADE851F00E1CB60 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		64311E8B1ADE852900E1CB60 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		64311E8D1ADE853400E1CB60 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		64311E931ADE887A00E1CB60 /* Toddler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Toddler-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		64311E9E1ADF00B200E1CB60 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		64311EA01ADF00BC00E1CB60 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		64311EA61ADF0B0F00E1CB60 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		64311EA81ADF0D5A00E1CB60 /* SignUpInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInViewController.swift; sourceTree = "<group>"; };
+		6DC61F451ADF1AAE000075B4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = SDKs/Bolts.framework; sourceTree = "<group>"; };
+		6DC61F461ADF1AAE000075B4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = SDKs/Parse.framework; sourceTree = "<group>"; };
+		6DC61F471ADF1AAE000075B4 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = SDKs/ParseCrashReporting.framework; sourceTree = "<group>"; };
+		6DC61F481ADF1AAE000075B4 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = SDKs/ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		6DC61F491ADF1AAE000075B4 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = SDKs/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		6DC61F4A1ADF1AAE000075B4 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = SDKs/ParseUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +84,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DC61F4E1ADF1AAE000075B4 /* ParseFacebookUtils.framework in Frameworks */,
+				64311EA11ADF00BC00E1CB60 /* Social.framework in Frameworks */,
+				6DC61F501ADF1AAE000075B4 /* ParseUI.framework in Frameworks */,
+				6DC61F4F1ADF1AAE000075B4 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				64311E9F1ADF00B200E1CB60 /* Accounts.framework in Frameworks */,
+				64311E8E1ADE853500E1CB60 /* libsqlite3.dylib in Frameworks */,
+				64311E8C1ADE852900E1CB60 /* libz.dylib in Frameworks */,
+				64311E8A1ADE851F00E1CB60 /* SystemConfiguration.framework in Frameworks */,
+				64311E881ADE851700E1CB60 /* StoreKit.framework in Frameworks */,
+				64311E861ADE851100E1CB60 /* Security.framework in Frameworks */,
+				6DC61F4D1ADF1AAE000075B4 /* ParseCrashReporting.framework in Frameworks */,
+				6DC61F4C1ADF1AAE000075B4 /* Parse.framework in Frameworks */,
+				64311E841ADE850B00E1CB60 /* QuartzCore.framework in Frameworks */,
+				64311E821ADE850100E1CB60 /* MobileCoreServices.framework in Frameworks */,
+				6DC61F4B1ADF1AAE000075B4 /* Bolts.framework in Frameworks */,
+				64311E801ADE84F900E1CB60 /* CoreLocation.framework in Frameworks */,
+				64311E7E1ADE84EF00E1CB60 /* CoreGraphics.framework in Frameworks */,
+				64311E7C1ADE84E700E1CB60 /* CFNetwork.framework in Frameworks */,
+				64311E7A1ADE84DE00E1CB60 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +119,7 @@
 		64311E461ADE841600E1CB60 = {
 			isa = PBXGroup;
 			children = (
+				64311E781ADE84CB00E1CB60 /* Frameworks */,
 				64311E511ADE841600E1CB60 /* Toddler */,
 				64311E671ADE841600E1CB60 /* ToddlerTests */,
 				64311E501ADE841600E1CB60 /* Products */,
@@ -77,12 +138,14 @@
 		64311E511ADE841600E1CB60 /* Toddler */ = {
 			isa = PBXGroup;
 			children = (
+				64311E931ADE887A00E1CB60 /* Toddler-Bridging-Header.h */,
 				64311E541ADE841600E1CB60 /* AppDelegate.swift */,
-				64311E561ADE841600E1CB60 /* ViewController.swift */,
 				64311E581ADE841600E1CB60 /* Main.storyboard */,
 				64311E5B1ADE841600E1CB60 /* Images.xcassets */,
 				64311E5D1ADE841600E1CB60 /* LaunchScreen.xib */,
 				64311E521ADE841600E1CB60 /* Supporting Files */,
+				64311EA61ADF0B0F00E1CB60 /* MasterViewController.swift */,
+				64311EA81ADF0D5A00E1CB60 /* SignUpInViewController.swift */,
 			);
 			path = Toddler;
 			sourceTree = "<group>";
@@ -110,6 +173,32 @@
 				64311E691ADE841600E1CB60 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64311E781ADE84CB00E1CB60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DC61F451ADF1AAE000075B4 /* Bolts.framework */,
+				6DC61F461ADF1AAE000075B4 /* Parse.framework */,
+				6DC61F471ADF1AAE000075B4 /* ParseCrashReporting.framework */,
+				6DC61F481ADF1AAE000075B4 /* ParseFacebookUtils.framework */,
+				6DC61F491ADF1AAE000075B4 /* ParseFacebookUtilsV4.framework */,
+				6DC61F4A1ADF1AAE000075B4 /* ParseUI.framework */,
+				64311EA01ADF00BC00E1CB60 /* Social.framework */,
+				64311E9E1ADF00B200E1CB60 /* Accounts.framework */,
+				64311E8D1ADE853400E1CB60 /* libsqlite3.dylib */,
+				64311E8B1ADE852900E1CB60 /* libz.dylib */,
+				64311E891ADE851F00E1CB60 /* SystemConfiguration.framework */,
+				64311E871ADE851700E1CB60 /* StoreKit.framework */,
+				64311E851ADE851100E1CB60 /* Security.framework */,
+				64311E831ADE850B00E1CB60 /* QuartzCore.framework */,
+				64311E811ADE850100E1CB60 /* MobileCoreServices.framework */,
+				64311E7F1ADE84F900E1CB60 /* CoreLocation.framework */,
+				64311E7D1ADE84EF00E1CB60 /* CoreGraphics.framework */,
+				64311E7B1ADE84E700E1CB60 /* CFNetwork.framework */,
+				64311E791ADE84DE00E1CB60 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64311E571ADE841600E1CB60 /* ViewController.swift in Sources */,
+				64311EA71ADF0B0F00E1CB60 /* MasterViewController.swift in Sources */,
 				64311E551ADE841600E1CB60 /* AppDelegate.swift in Sources */,
+				64311EA91ADF0D5A00E1CB60 /* SignUpInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +426,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/reolee/Documents/Dev/parse-library-1",
+					"/Users/reolee/Documents/Dev/parse-library-1.7.1",
+					"$(PROJECT_DIR)/SDKs",
+				);
 				INFOPLIST_FILE = Toddler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Toddler-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +445,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/reolee/Documents/Dev/parse-library-1",
+					"/Users/reolee/Documents/Dev/parse-library-1.7.1",
+					"$(PROJECT_DIR)/SDKs",
+				);
 				INFOPLIST_FILE = Toddler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Toddler-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +512,7 @@
 				64311E701ADE841600E1CB60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64311E711ADE841600E1CB60 /* Build configuration list for PBXNativeTarget "ToddlerTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +521,7 @@
 				64311E731ADE841600E1CB60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

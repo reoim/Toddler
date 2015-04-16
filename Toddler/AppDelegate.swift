@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +19,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("LKWmoLgXxmerUDCpSIq5aUJHcYAh8DWT2nxLSRrk",
+            clientKey: "tbX5JQLI01PESyvUatrUj5eyQX8bJedRjOR6e00u")
+        
+        /*
+        var testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.setObject("user1", forKey: "user")
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            println("Object has been saved.")
+        }
+        */
+
+        //PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
+        
         return true
     }
 
